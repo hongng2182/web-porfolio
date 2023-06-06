@@ -1,25 +1,20 @@
+/* Global */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Caveat:wght@700&family=Fira+Code:wght@500;700&family=Source+Code+Pro:wght@700;800&display=swap');
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
     box-sizing: border-box;
 }
 
 * {
     margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    overflow: scroll;
-    transition: background-color 0.5s ease;
-}
-
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0;
     height: 0;
-}
+} */
 
 :root {
     --font-headline: 'Source Code Pro', monospace;
@@ -304,4 +299,17 @@ body {
     line-height: var(--typescale-title-small-height);
     text-transform: var(--typescale-title-small-text-transform);
     text-decoration: var(--typescale-title-small-text-decoration);
+}
+
+body {
+    overflow: scroll;
+    background-color: var(--color-background);
+    transition: background-color 0.5s ease;
+    cursor: none;
+}
+
+/* Each section */
+section {
+    min-height: 100vh;
+    height: fit-content;
 }

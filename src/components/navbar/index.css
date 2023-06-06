@@ -1,0 +1,8 @@
+/* Navbar */
+nav {
+    height: var(--header-height);
+    position: sticky;
+    top: 0;
+    background-color: #D4FAFC;
+    z-index: 1;
+}
