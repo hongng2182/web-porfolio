@@ -1,18 +1,105 @@
 /* Hero */
 .intro {
     height: 100vh;
-    background-image: url('./assets/mask.svg');
+    background-image: url('../../assets/mask.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .intro-content {
+    width: auto;
     height: calc(100vh - var(--header-height));
     display: grid;
     place-items: center;
-    align-content: start;
+    align-content: center;
+    gap: 10px
 }
 
 .avatar {
     background-color: var(--color-background);
+    opacity: 0;
+    animation: fadeInUp var(--avatarShowDuration) ease forwards;
+}
+
+.headline-large.typewriter {
+    color: var(--color-primary);
+    text-shadow: 5px 2px 0px var(--color-primary-container);
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 2s ease 1s forwards;
+}
+
+h3.fade-in {
+    color: var(--color-primary);
+    text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    text-align: center;
+    animation: fadeInUp 2s ease 2s forwards;
+}
+
+h1.typewriter::before,
+h1.typewriter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+@media screen and (min-width: 500px) {
+    .intro-content {
+        align-content: start;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .headline-large.typewriter {
+        background: linear-gradient(var(--color-primary-container), var(--color-on-primary-container));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 5px 2px 0px var(--color-primary);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1.typewriter::before {
+        background: var(--color-background);
+        animation: typewriter var(--typeWriterSpeed) steps(var(--typeWriterCharacters)) var(--avatarShowDuration) forwards;
+    }
+
+    h1.typewriter::after {
+        width: 0.4rem;
+        right: 5px;
+        background: var(--color-on-primary-container);
+        animation:
+            typewriter var(--typeWriterSpeed) steps(var(--typeWriterCharacters)) var(--avatarShowDuration) forwards,
+            blink 750ms steps(2, start) infinite;
+    }
+
+    h3.fade-in {
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease calc(var(--typeWriterSpeed) + var(--avatarShowDuration)) forwards;
+        margin-top: 0;
+    }
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

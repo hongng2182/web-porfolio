@@ -5,11 +5,11 @@ function App() {
   return (<>
     <Navbar />
     <Hero />
-    <TailMovingCursor />
     <AboutMe />
     <Projects />
     <Courses />
     <Contact />
+    <TailMovingCursor />
   </>
   )
 }

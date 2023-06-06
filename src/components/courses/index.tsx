@@ -9,7 +9,7 @@ function Courses() {
         <div className="home-about">
           <h2 className='title-large'>03. Courses I have learn so far</h2>
         </div>
-        <div className="home-more-stuff">
+        {/* <div className="home-more-stuff">
           <div className="more-stuff-grid">
             <img
               src="https://unsplash.it/400"
@@ -94,7 +94,7 @@ function Courses() {
               className="slide-in from-right"
             />
           </div>
-        </div>
+        </div> */}
       </Layout></section>
   )
 }

@@ -4,6 +4,7 @@
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
+    font-size: 15px;
 }
 
 * {
@@ -48,13 +49,13 @@ html {
     --typescale-headline-large-font-family-name: var(--font-headline);
     --typescale-headline-large-font-family-style: ExtraBold;
     --typescale-headline-large-font-weight: 800px;
-    --typescale-headline-large-font-size: 72px;
+    --typescale-headline-large-font-size: clamp(2.3rem, 6vw, 4.6rem);
     --typescale-headline-large-line-height: 100px;
     /* headline - medium */
     --typescale-headline-medium-font-family-name: var(--font-headline);
     --typescale-headline-medium-font-family-style: ExtraBold;
     --typescale-headline-medium-font-weight: 800px;
-    --typescale-headline-medium-font-size: 35px;
+    --typescale-headline-medium-font-size: clamp(1.8rem, 3vw, 3.1rem);
     --typescale-headline-medium-line-height: 50px;
     /* headline - small */
     --typescale-headline-small-font-family-name: var(--font-headline);
@@ -66,7 +67,7 @@ html {
     --typescale-body-large-font-family-name: var(--font-body);
     --typescale-body-large-font-family-style: Regular;
     --typescale-body-large-font-weight: 400px;
-    --typescale-body-large-font-size: 20px;
+    --typescale-body-large-font-size: clamp(1.1rem, 1.7vw, 1.4rem);
     --typescale-body-large-line-height: 30px;
     /* body - medium */
     --typescale-body-medium-font-family-name: var(--font-body);
@@ -114,7 +115,7 @@ html {
     --typescale-title-large-font-family-name: var(--font-title);
     --typescale-title-large-font-family-style: Bold;
     --typescale-title-large-font-weight: 700px;
-    --typescale-title-large-font-size: 80px;
+    --typescale-title-large-font-size: clamp(3.5rem, 7vw, 5.3rem);
     --typescale-title-large-line-height: 70px;
     /* title - medium */
     --typescale-title-medium-font-family-name: var(--font-title);
@@ -128,6 +129,10 @@ html {
     --typescale-title-small-font-weight: 700px;
     --typescale-title-small-font-size: 20px;
     --typescale-title-small-line-height: 17px;
+    /* typewriter */
+    --avatarShowDuration: 2s;
+    --typeWriterSpeed: 3s;
+    --typeWriterCharacters: 18
 }
 
 /* TYPOGRAPHY MODULE */

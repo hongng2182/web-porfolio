@@ -5,6 +5,12 @@
     border-radius: 40px;
 }
 
+.title-large.project {
+    color: var(--color-on-tertiary);
+    text-shadow: 0px 4px 4px var(--color-on-tertiary-container);
+    filter: drop-shadow(0px 10px 4px var(--color-on-tertiary-container));
+}
+
 .scroll_wrap {
     display: flex;
 }
