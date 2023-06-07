@@ -3,16 +3,16 @@ import React, { useEffect, useRef } from 'react'
 import './index.css'
 
 const colors = [
-    '#e7edf0',
-    '#cedbe1',
-    '#b6cad2',
-    '#9db8c3',
-    '#85a6b4',
-    '#6c94a4',
-    '#548295',
-    '#3b7186',
-    '#235f77',
-    '#0a4d68',
+    "#d9ed92",
+    "#b5e48c",
+    "#99d98c",
+    "#76c893",
+    "#52b69a",
+    "#34a0a4",
+    "#168aad",
+    "#1a759f",
+    "#1e6091",
+    "#184e77"
 ];
 
 interface CustomHTMLDivElement extends HTMLDivElement {

@@ -4,5 +4,5 @@ nav {
     position: sticky;
     top: 0;
     background-color: #D4FAFC;
-    z-index: 1;
+    z-index: var(--nav-zIndex);
 }

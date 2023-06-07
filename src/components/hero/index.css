@@ -28,6 +28,7 @@
     text-align: center;
     opacity: 0;
     animation: fadeInUp 2s ease 1s forwards;
+    z-index: var(--ontop-cursor-zIndex)
 }
 
 h3.fade-in {
@@ -36,6 +37,7 @@ h3.fade-in {
     opacity: 0;
     text-align: center;
     animation: fadeInUp 2s ease 2s forwards;
+    z-index: var(--ontop-cursor-zIndex)
 }
 
 h1.typewriter::before,
@@ -59,7 +61,7 @@ h1.typewriter::after {
         background: linear-gradient(var(--color-primary-container), var(--color-on-primary-container));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        text-shadow: 5px 2px 0px var(--color-primary);
+        text-shadow: -5px 2px 0px #034733;
     }
 }
 

@@ -1,27 +1,17 @@
 import React from 'react'
 import './index.css'
+import { projects } from '../../constants'
+import ProjectCard from './project-card'
 
 function Projects() {
   return (
     <section className="projects">
-      <div className='scroll_wrap'>
-        <div className='left'>
+      <div className='projects-container'>
+        <div className='projects-title-wrap'>
           <h2 className="title-large project">02. Projects</h2>
         </div>
-
-      </div>
-      <div className='right'>
-        <div className='box'>
-          <p>A</p>
-        </div>
-        <div className='box'>
-          <p>B</p>
-        </div>
-        <div className='box'>
-          <p>C</p>
-        </div>
-        <div className='box'>
-          <p>D</p>
+        <div className='project-scroll-wrap'>
+          {projects.map(project => <ProjectCard key={project.title} project={project} />)}
         </div>
       </div>
     </section >
