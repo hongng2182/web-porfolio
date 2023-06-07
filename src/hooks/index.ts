@@ -1,4 +1,4 @@
 import useMediaQuery from "./useMediaQuery";
+import useIntersectionObserver from "./useIntersectionObserver";
 
-// eslint-disable-next-line import/prefer-default-export
-export { useMediaQuery }
+export { useMediaQuery, useIntersectionObserver }

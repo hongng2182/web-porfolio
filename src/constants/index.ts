@@ -1,6 +1,5 @@
-import { Project } from "../types";
+import { Course, Project } from "../types";
 
-// eslint-disable-next-line import/prefer-default-export
 export const projects: Project[] = [{
     title: "Sleeklingo",
     projectImg: "sleeklingo.png",
@@ -21,7 +20,7 @@ export const projects: Project[] = [{
     title: "My Personal Website",
     projectImg: "personal-web.png",
     alt: 'personal-web',
-    description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic facere aut dolor error, cum necessitatibus excepturi, assumenda similique esse repudiandae quisquam quos aspernatur eveniet? Veritatis, sit. Non, iusto est.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic facere aut dolor error, cum necessitatibus excepturi, assumenda similique esse repudiandae quisquam quos aspernatur eveniet? Veritatis, sit. Non, iusto est.",
     techStack: ["Vite", "React", "PlainCSS", "Typescript", "GSAP", "Typescript"],
     githubLink: "github.com",
     demoLink: "demolink.com"
@@ -36,3 +35,20 @@ export const projects: Project[] = [{
     demoLink: "demolink.com"
 }]
 
+
+export const courses: Course[] = [{
+    title: "CS50's Introduction to Computer Science",
+    courseImg: "CS50x.png",
+    alt: 'cs50',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic facere aut dolor error, cum necessitatibus excepturi, assumenda similique esse repudiandae quisquam quos aspernatur eveniet? Veritatis, sit. Non, iusto est."
+}, {
+    title: "FreeCodeCamp: Responsive Web Design",
+    courseImg: "responsive-web-design.png",
+    alt: 'responsive-web-design',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic facere aut dolor error, cum necessitatibus excepturi, assumenda similique esse repudiandae quisquam quos aspernatur eveniet? Veritatis, sit. Non, iusto est."
+}, {
+    title: "FreeCodeCamp: JavaScript Algorithms and Data Structures",
+    courseImg: "js-algorithms.png",
+    alt: 'js-algorithms',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic facere aut dolor error, cum necessitatibus excepturi, assumenda similique esse repudiandae quisquam quos aspernatur eveniet? Veritatis, sit. Non, iusto est."
+}]

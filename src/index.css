@@ -101,7 +101,7 @@ html {
     --typescale-subtitle-medium-font-family-name: var(--font-label-subtitle);
     --typescale-subtitle-medium-font-family-style: Bold;
     --typescale-subtitle-medium-font-weight: 700;
-    --typescale-subtitle-medium-font-size: 17px;
+    --typescale-subtitle-medium-font-size: clamp(1.1rem, 2.8vw, 2rem);
     --typescale-subtitle-medium-line-height: auto;
     /* title - large */
     --typescale-title-large-font-family-name: var(--font-title);

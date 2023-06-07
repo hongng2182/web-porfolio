@@ -1,4 +1,6 @@
 /* Contact */
 .contact {
-    background-color: #002117;
+    position: relative;
+    background-position: -10px -10px;
+    background-size: 90px;
 }

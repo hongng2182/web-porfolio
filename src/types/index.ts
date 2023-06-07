@@ -7,3 +7,10 @@ export type Project = {
     githubLink: string,
     demoLink: string
 }
+
+export type Course = {
+    title: string,
+    courseImg: string,
+    alt: string,
+    description: string,
+}
