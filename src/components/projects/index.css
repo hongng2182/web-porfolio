@@ -2,7 +2,7 @@
 .projects {
     background-color: var(--color-primary);
     border-radius: 40px;
-    margin: 0 1rem
+    margin: 0 1rem;
 }
 
 .projects-container {

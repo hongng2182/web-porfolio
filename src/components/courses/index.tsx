@@ -38,12 +38,12 @@ function Courses() {
     targetClasses: ['slide-in'],
     options: {
       threshold: 0,
-      rootMargin: '0px 0px -300px 0px',
+      rootMargin: '0px 0px -150px 0px',
     },
   });
 
   return (
-    <section className="courses">
+    <section id="courses" className="courses">
       <Layout>
         <div className="courses_title-container" ref={scrollRef}>
           <div className="title-container-inner">
@@ -55,28 +55,17 @@ function Courses() {
 
         <div className="courses_display">
           {courses.map((course, index) =>
-            <div key={course.title} className="course_row">
-              {index % 2 === 0 ? <>
-                <img
-                  src={course.courseImg}
-                  alt={course.alt}
-                  className="slide-in left"
-                />
-                <div className="slide-in right">
-                  <h3 className='subtitle-medium'>{course.title}</h3>
-                  <p className='body-medium'>{course.description}</p>
-                </div>
-              </> : <>
-                <div className="slide-in left">
-                  <h3 className='subtitle-medium'>{course.title}</h3>
-                  <p className='body-medium'>{course.description}</p>
-                </div>
-                <img
-                  src={course.courseImg}
-                  alt={course.alt}
-                  className="slide-in right"
-                />
-              </>}
+            <div key={course.title} className={`course_row ${index % 2 !== 0 ? 'reverse' : ''}`}>
+              <img
+                src={course.courseImg}
+                alt={course.alt}
+                id={`${index === courses.length - 1 ? 'last' : ''}`}
+                className='slide-in'
+              />
+              <div className='slide-in'>
+                <h3 className='subtitle-medium'>{course.title}</h3>
+                <p className='body-medium'>{course.description}</p>
+              </div>
             </div>)}
         </div>
       </Layout></section >

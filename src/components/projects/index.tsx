@@ -5,7 +5,7 @@ import ProjectCard from './project-card'
 
 function Projects() {
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className='projects-container'>
         <div className='projects-title-wrap'>
           <h2 className="title-large project">02. Projects</h2>

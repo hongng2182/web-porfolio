@@ -4,6 +4,7 @@
     background-image: url('../../assets/mask.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0px -15px;
 }
 
 .intro-content {
@@ -48,12 +49,6 @@ h1.typewriter::after {
     right: 0;
     bottom: 0;
     left: 0
-}
-
-@media screen and (min-width: 500px) {
-    .intro-content {
-        align-content: start;
-    }
 }
 
 @media screen and (min-width: 600px) {

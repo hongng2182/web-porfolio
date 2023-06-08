@@ -8,10 +8,13 @@ function Contact() {
   useEffect(() => {
     observer.current = new IntersectionObserver(entries => {
       entries.forEach(entry => {
+        const el = document.getElementById('last')
         if (entry.isIntersecting) {
           document.body.style.backgroundColor = 'var(--color-on-primary-container)'
+          if (el) { el.style.visibility = 'hidden' }
         } else {
-          document.body.style.backgroundColor = '#f3f3f3'
+          document.body.style.backgroundColor = 'var(--color-background)'
+          if (el) { el.style.visibility = 'visible' }
         }
       });
     });
@@ -32,9 +35,18 @@ function Contact() {
   }, []);
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <Layout>
-        <h2 className='title-large'>04. Contact</h2>
+        <div className='contact-content'>
+          <div className='contact-title'>
+            <h2 className='title-large'>04. Contact</h2>
+            <div className='line' />
+          </div>
+          <div className='contact-details body-large'>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aut, optio quo illo exercitationem doloribus consequatur. Sit alias animi perferendis exercitationem doloremque. Asperiores veritatis nisi ut unde aliquam ipsam minima?</p>
+          </div>
+        </div>
+        <footer>Design and built by Hong Nguyen</footer>
       </Layout>
     </section>
   )

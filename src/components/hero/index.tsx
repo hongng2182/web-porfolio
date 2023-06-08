@@ -7,7 +7,7 @@ import './index.css'
 function Hero() {
   const smallerThan500 = useMediaQuery('(max-width: 500px)')
   return (
-    <section className="intro">
+    <section id="home" className="intro">
       <Layout>
         <div className='intro-content'>
           <div className='avatar'>

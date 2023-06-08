@@ -12,10 +12,6 @@ html {
     padding: 0;
 }
 
-/* ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-} */
 
 :root {
     --font-headline: 'Source Code Pro', monospace;
@@ -103,6 +99,12 @@ html {
     --typescale-subtitle-medium-font-weight: 700;
     --typescale-subtitle-medium-font-size: clamp(1.1rem, 2.8vw, 2rem);
     --typescale-subtitle-medium-line-height: auto;
+    /* subtitle - small */
+    --typescale-subtitle-small-font-family-name: var(--font-label-subtitle);
+    --typescale-subtitle-small-font-family-style: Bold;
+    --typescale-subtitle-small-font-weight: 700;
+    --typescale-subtitle-small-font-size: clamp(16px, 2.2vw, 18px);
+    --typescale-subtitle-small-line-height: auto;
     /* title - large */
     --typescale-title-large-font-family-name: var(--font-title);
     --typescale-title-large-font-family-style: Bold;
@@ -128,7 +130,7 @@ html {
     /* z-index */
     --cursor-zIndex: 999;
     --ontop-cursor-zIndex: 1000;
-    --nav-zIndex: 9999
+    --nav-zIndex: 1001
 }
 
 /* TYPOGRAPHY MODULE */
@@ -244,6 +246,14 @@ html {
     line-height: var(--typescale-subtitle-medium-height);
 }
 
+.subtitle-small {
+    font-family: var(--typescale-subtitle-small-font-family-name);
+    font-style: var(--typescale-subtitle-small-font-family-style);
+    font-weight: var(--typescale-subtitle-small-font-weight);
+    font-size: var(--typescale-subtitle-small-font-size);
+    line-height: var(--typescale-subtitle-small-height);
+}
+
 .title-large {
     font-family: var(--typescale-title-large-font-family-name);
     font-style: var(--typescale-title-large-font-family-style);
@@ -277,6 +287,12 @@ body {
 
 /* Each section */
 section {
-    min-height: 100vh;
+    min-height: max-content;
     height: fit-content;
+}
+
+@media screen and (min-height: 500px) {
+    section {
+        min-height: 100vh;
+    }
 }

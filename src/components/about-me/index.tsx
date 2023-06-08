@@ -13,7 +13,7 @@ function AboutMe() {
   });
 
   return (
-    <section className="about">
+    <section id="about" className="about">
       <Layout>
         <div className='about-content'>
           <div className='title-container fade-in'>
