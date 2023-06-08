@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import './index.css'
 
 const colors = [

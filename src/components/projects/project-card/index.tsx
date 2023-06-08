@@ -1,6 +1,5 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React from 'react'
 import { Project } from "../../../types"
 import { GithubIcon, LinkIcon } from '../../svg'
 import './index.css'

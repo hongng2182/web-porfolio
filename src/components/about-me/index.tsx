@@ -1,4 +1,3 @@
-import React from 'react'
 import Layout from '../layout'
 import './index.css'
 import { useIntersectionObserver } from '../../hooks';
