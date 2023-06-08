@@ -1,6 +1,9 @@
 import { Navbar, TailMovingCursor, Hero, AboutMe, Projects, Courses, Contact } from './components'
+import { useMediaQuery } from './hooks'
 
 function App() {
+  const largerThan500 = useMediaQuery('(min-width: 500px)')
+
   return (<>
     <Navbar />
     <Hero />
@@ -8,7 +11,7 @@ function App() {
     <Projects />
     <Courses />
     <Contact />
-    <TailMovingCursor />
+    {largerThan500 && <TailMovingCursor />}
   </>
   )
 }

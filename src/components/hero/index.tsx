@@ -13,7 +13,7 @@ function Hero() {
             <Avatar width={smallerThan500 ? 250 : 300} height={smallerThan500 ? 300 : 400} />
           </div>
           <h1 className='headline-large typewriter'>Hi i&apos;m Hong Nguyen</h1>
-          <h3 className='headline-medium fade-in'>Welcome to my website</h3>
+          <h3 className='headline-medium fade-in'>Welcome to my web porfolio</h3>
         </div>
       </Layout>
     </section >

@@ -45,6 +45,7 @@
 }
 
 footer {
+    position: relative;
     color: var(--color-surface-variant);
     font-family: var(--font-label-subtitle);
     font-size: 16px;
@@ -52,6 +53,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: var(--ontop-cursor-zIndex)
 }
 
 @media screen and (max-width: 600px) {

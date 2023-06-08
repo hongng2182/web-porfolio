@@ -9,6 +9,7 @@
 
 .card-wrap>img {
     border-radius: 40px;
+    max-width: 100%;
 }
 
 .subtitle-large {

@@ -1,7 +1,6 @@
 /* Navbar */
 nav {
     width: 100vw;
-    height: var(--header-height);
     position: fixed;
     top: 0;
     z-index: var(--nav-zIndex);
@@ -14,8 +13,12 @@ nav>ul {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    height: 100%;
+    column-gap: 10px;
+    row-gap: 5px;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto
 }
 
 nav>ul>li {
@@ -23,17 +26,17 @@ nav>ul>li {
 }
 
 nav>ul>li>a>img {
-    width: 50px;
+    width: 22px;
     height: 100%;
 }
 
 nav>ul>li>a {
     text-decoration: none;
-    color: var(--color-primary)
+    color: var(--color-on-primary-containerrimary)
 }
 
 nav>ul>li:hover {
-    text-shadow: 5px 5px 15px #00FF93;
+    color: var(--color-primary)
 }
 
 .resume {
@@ -44,6 +47,33 @@ nav>ul>li:hover {
     color: var(--color-on-primary-container)
 }
 
+@media screen and (min-width: 390px) {
+    nav>ul {
+        width: 90%
+    }
+
+}
+
+@media screen and (min-width: 430px) {
+    nav>ul {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    nav>ul {
+        width: 100%;
+        gap: 20px
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    nav>ul>li>a>img {
+        width: 50px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     nav {
         width: 64px;
@@ -51,9 +81,11 @@ nav>ul>li:hover {
     }
 
     nav>ul {
+        width: var(--header-height);
         height: 100vh;
         flex-direction: row;
         transform: rotate(-90deg);
+        flex-wrap: nowrap;
     }
 
     nav>ul>li>a>img {
