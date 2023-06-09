@@ -19,7 +19,7 @@ function ProjectCard({ project }: { project: Project }) {
                     {techStack.map((tech, index) => <p className='label-large' key={index}>{tech}</p>)}
                 </div>
                 <div className="project-links">
-                    <a href={githubLink} target='__blank'><GithubIcon /></a>
+                    {githubLink && <a href={githubLink} target='__blank'><GithubIcon /></a>}
                     <a href={demoLink} target='__blank'><LinkIcon /></a>
                 </div>
             </div>

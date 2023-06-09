@@ -1,4 +1,4 @@
-type Project = {
+export type Project = {
     title: string,
     projectImg: string,
     alt: string,
@@ -17,7 +17,7 @@ type Course = {
 
 type Contact = {
     intro: string,
-    links: { socialImg: string,alt: string, href: string }[]
+    links: { socialImg: string, alt: string, href: string }[]
 }
 
 export type WebContent = {
