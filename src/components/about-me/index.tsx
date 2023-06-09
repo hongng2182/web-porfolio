@@ -1,8 +1,10 @@
 import Layout from '../layout'
 import './index.css'
 import { useIntersectionObserver } from '../../hooks';
+import { webContent } from '../../constants';
 
 function AboutMe() {
+  const { title, details: aboutMeDetails } = webContent.about
   useIntersectionObserver({
     targetClasses: ['fade-in'],
     options: {
@@ -16,13 +18,11 @@ function AboutMe() {
       <Layout>
         <div className='about-content'>
           <div className='title-container fade-in'>
-            <h2 className="title-large about-me">01. About me</h2>
+            <h2 className="title-large about-me">{title}</h2>
             <div className='line' />
           </div>
           <div className='about-details body-large fade-in'>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aut, optio quo illo exercitationem doloribus consequatur. Sit alias animi perferendis exercitationem doloremque. Asperiores veritatis nisi ut unde aliquam ipsam minima?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aut, optio quo illo exercitationem doloribus consequatur. Sit alias animi perferendis exercitationem doloremque. Asperiores veritatis nisi ut unde aliquam ipsam minima?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aut, optio quo illo exercitationem doloribus consequatur. Sit alias animi perferendis exercitationem doloremque. Asperiores veritatis nisi ut unde aliquam ipsam minima?</p>
+            {aboutMeDetails.map(detail => <p>{detail}</p>)}
           </div>
         </div>
       </Layout>

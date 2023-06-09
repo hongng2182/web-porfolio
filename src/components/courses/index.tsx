@@ -3,12 +3,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Layout from '../layout'
 import './index.css'
-import { courses } from '../../constants';
+import { webContent } from '../../constants';
 import { useIntersectionObserver } from '../../hooks';
 
 function Courses() {
   const scrollRef = useRef(null);
   const pinRef = useRef(null);
+  const { details: courses, title } = webContent.courses
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -48,7 +49,7 @@ function Courses() {
         <div className="courses_title-container" ref={scrollRef}>
           <div className="title-container-inner">
             <div ref={pinRef}>
-              <h2 className='title-large'>03. Courses I&apos;ve learnt</h2>
+              <h2 className='title-large'>{title}</h2>
             </div>
           </div>
         </div>
