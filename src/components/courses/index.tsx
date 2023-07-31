@@ -56,7 +56,8 @@ function Courses() {
 
         <div className="courses_display">
           {courses.map((course, index) =>
-            <div key={course.title} className={`course_row ${index % 2 !== 0 ? 'reverse' : ''}`}>
+            <a href={course.url} target="_blank" rel="noreferrer" key={course.title}
+              className={`course_row ${index % 2 !== 0 ? 'reverse' : ''}`}>
               <img
                 src={course.courseImg}
                 alt={course.alt}
@@ -67,7 +68,7 @@ function Courses() {
                 <h3 className='subtitle-medium'>{course.title}</h3>
                 <p className='body-medium'>{course.description}</p>
               </div>
-            </div>)}
+            </a>)}
         </div>
       </Layout></section >
   )

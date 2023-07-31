@@ -43,7 +43,7 @@ html {
     --typescale-headline-medium-font-family-name: var(--font-headline);
     --typescale-headline-medium-font-family-style: ExtraBold;
     --typescale-headline-medium-font-weight: 800;
-    --typescale-headline-medium-font-size: clamp(1.8rem, 3vw, 3.1rem);
+    --typescale-headline-medium-font-size: clamp(1.2rem, 3vw, 3.1rem);
     --typescale-headline-medium-line-height: 50px;
     /* headline - small */
     --typescale-headline-small-font-family-name: var(--font-headline);

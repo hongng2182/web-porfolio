@@ -1,7 +1,6 @@
 /* Hero */
 .intro {
     height: 100vh;
-    background-image: url('../../assets/mask.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -15px;

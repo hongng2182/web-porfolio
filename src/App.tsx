@@ -1,4 +1,4 @@
-import { Navbar, TailMovingCursor, Hero, AboutMe, Projects, Courses, Contact } from './components'
+import { Navbar, TailMovingCursor, Hero, Projects, Courses, Contact } from './components'
 import { useMediaQuery } from './hooks'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (<>
     <Navbar />
     <Hero />
-    <AboutMe />
+    {/* <AboutMe /> */}
     <Projects />
     <Courses />
     <Contact />

@@ -3,70 +3,75 @@ import { WebContent } from "../types";
 // eslint-disable-next-line import/prefer-default-export
 export const webContent: WebContent = {
     hero: {
-        title: "Hi, i'm Hong Nguyen",
-        subtitle: 'A software developer from Vietnam'
+        title: "Hi, I'm Hong Nguyen",
+        subtitle: 'A Vietnam-based front end developer'
     },
     about: {
         title: '01. About me',
-        details: ["I've started my learning journey to become a software engineer since September 2022. I graduated university majored in English Language in Ho Chi Minh City, Vietnam and worked as a sales consultant for 2 years, but then I realised it's not the job that I want to pursue for my long-term career.", "I've always liked working with computers since I was a student, and I love the idea of building something of my own, that can help myself and other people."]
+        details: [""]
     },
     projects: {
-        title: '02. Projects',
+        title: 'Projects',
         details: [{
             title: "Sleeklingo",
             projectImg: "sleeklingo.png",
             alt: 'sleeklingo',
-            description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic facere aut dolor error, cum necessitatibus excepturi, assumenda similique esse repudiandae quisquam quos aspernatur eveniet? Veritatis, sit. Non, iusto est.",
-            techStack: ["NextJS", "React", "TailwindCSS", "GriffelCSS", "ReactQuery", "Typescript", "Firebase"],
+            description: "An AI-Powered English learning website to help users prepare for the IELTS exam. With 15,000 users and 600 daily active users since first launch in April, 2023, I played a key role in implementing features such as authentication, AI conversation, speaking/writing enhancement, and creating a user-friendly dashboard.",
+            techStack: ["NextJS", "React", "FluentUI", "ReactQuery", "Typescript", "Firebase"],
             githubLink: null,
             demoLink: "https://sleeklingo.com"
         }, {
-            title: "Reddit Clone",
+            title: "Mini Reddit",
             projectImg: "reddit-clone.png",
             alt: 'reddit-clone',
-            description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic facere aut dolor error, cum necessitatibus excepturi, assumenda similique esse repudiandae quisquam quos aspernatur eveniet? Veritatis, sit. Non, iusto est.",
-            techStack: ["Node-Express", "PostgresSQL", "Redis", "NextJS", "TailwindCSS", "Apollo-GraphQL", "Typescript"],
+            description: "A small-scale version of Reddit clone. I created this web app with the intention of learning and exploring new technologies. This project allowed me to dive into the world of web development while honing my skills in both front-end and back-end technologies. Through creating this Reddit-inspired platform, I gained valuable experience in building user interfaces, implementing authentication systems, and handling data interactions.",
+            techStack: ["Node-Express", "PostgreSQL", "Redis", "NextJS", "React", "TailwindCSS", "Apollo-GraphQL", "Typescript"],
             githubLink: "https://github.com/hongng2182/reddit-clone",
-            demoLink: "https://mini-reddit-by-hn.onrender.com/"
-        }, {
-            title: "My Personal Website",
-            projectImg: "personal-web.png",
-            alt: 'personal-web',
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic facere aut dolor error, cum necessitatibus excepturi, assumenda similique esse repudiandae quisquam quos aspernatur eveniet? Veritatis, sit. Non, iusto est.",
-            techStack: ["Vite", "React", "CSS", "Typescript", "GSAP"],
-            githubLink: "https://github.com/hongng2182/web-porfolio",
-            demoLink: "https://hongnguyen.onrender.com/"
+            demoLink: "https://mini-reddit-eight.vercel.app/"
         },
         {
             title: "Quiz App",
             projectImg: "quiz-app.gif",
             alt: 'quiz-app',
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic facere aut dolor error, cum necessitatibus excepturi, assumenda similique esse repudiandae quisquam quos aspernatur eveniet? Veritatis, sit. Non, iusto est.",
-            techStack: ["React", "CSS"],
+            description: "A mini quiz application of 5 questions designed to evaluate one's general knowledge across various topics, using Open Trivia Database API.",
+            techStack: ["React", "CSS", "Javascript"],
             githubLink: "https://github.com/hongng2182/Quizz-App",
-            demoLink: "https://simple-quiz-app-qm86.onrender.com"
+            demoLink: "https://simple-quizz-app-rouge.vercel.app"
+        },
+        {
+            title: "Tenzies Game",
+            projectImg: "tenzies-game.gif",
+            alt: 'tenzies-game',
+            description: "A small dice game created when I first learning React. It based on an online tutorial but I added some additional features.",
+            techStack: ["Javascript", "React", "CSS"],
+            githubLink: "https://github.com/hongng2182/Tenzies-game",
+            demoLink: "tenzies-game-snowy.vercel.app",
+            media: { height: 320 }
         }]
     },
     courses: {
-        title: "03. Courses I've learnt",
+        title: "Courses I've learnt",
         details: [{
             title: "CS50's Introduction to Computer Science",
             courseImg: "CS50x.png",
             alt: 'cs50',
-            description: "This is so far my most favorite course on computer science. I'm so grateful that I took it.Each of the problem sets was so well- designed and provides thorough explanation on what should be done to complete it.I found myself always excited to solve any problems that was given. Overall, it was both a fun and exiting learning experience."
+            description: "This is so far my most favorite course - it offered engaging lessons on programming, algorithms, data structures, and help me build a strong foundation in computer science. Each of the problem sets was so well- designed and provides thorough explanation on what should be done to complete. I couldn't help but feel excited to tackle each challenge, finding joy in solving every problem presented.",
+            url: 'https://certificates.cs50.io/616ca3ac-e480-45d2-8690-6f9514334ac6.pdf?size=letter'
         }, {
             title: "FreeCodeCamp: Responsive Web Design",
             courseImg: "responsive-web-design.png",
             alt: 'responsive-web-design',
-            description: "I gained basic understanding of HTML and CSS thanks to this course. So many new things to learn but it's exciting too!"
+            description: "This course has been a game-changer for me as a budding front-end developer. It provided me with a solid foundation in HTML and CSS, empowering me to create responsive and visually appealing web pages. The course offered a wealth of new concepts to explore, making the learning journey exciting and inspiring. From mastering the layout design to understanding media queries and flexbox, I now feel confident in crafting captivating and user-friendly websites.",
+            url: 'https://www.freecodecamp.org/certification/hongnguyen/responsive-web-design'
         }, {
             title: "FreeCodeCamp: JavaScript Algorithms and Data Structures",
             courseImg: "js-algorithms.png",
             alt: 'js-algorithms',
-            description: "This course has taught me features of a programming language and how algorithms work. Working on the problems helps to trainmy mind to think more logicly.I'm glad to finish this course!"
+            description: "This course has taught me invaluable features of a programming language and honed my ability to think logically. Working on the problems helped train my mind to approach problem-solving with a strategic mindset.",
+            url: 'https://www.freecodecamp.org/certification/hongnguyen/javascript-algorithms-and-data-structures'
         }]
     }, contact: {
-        title: '04. Contact',
+        title: 'Contact',
         details: {
             intro: "I'm currently looking for a job as a front end developer both onsite or remote. Please feel free to contact me if you're interested!",
             links: [{

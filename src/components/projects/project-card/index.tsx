@@ -9,7 +9,7 @@ function ProjectCard({ project }: { project: Project }) {
 
     return <div key={title} className='project-card'>
         <div className='card-wrap'>
-            <img alt={alt} src={projectImg} />
+            <img style={{ height: project.media?.height ? project.media.height : 'auto'}} alt={alt} src={projectImg} />
             <div className='card-info'>
                 <h3 className="subtitle-large">{title}</h3>
                 <div className="project-description body-medium">

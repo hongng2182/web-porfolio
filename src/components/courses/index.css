@@ -37,6 +37,7 @@
     flex-direction: column;
     gap: 2em;
     align-items: center;
+    text-decoration: none;
 }
 
 .course_row>img {

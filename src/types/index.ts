@@ -5,7 +5,8 @@ export type Project = {
     description: string,
     techStack: string[],
     githubLink: string | null,
-    demoLink: string
+    demoLink: string,
+    media?: { height ?: number | null }
 }
 
 type Course = {
@@ -13,6 +14,7 @@ type Course = {
     courseImg: string,
     alt: string,
     description: string,
+    url: string
 }
 
 type Contact = {
